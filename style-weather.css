@@ -1,0 +1,3124 @@
+html {
+  /*margin: 0;*/
+  zoom: 100%;
+  /*height: 100vh;
+  width: 100vw;*/
+
+  overflow: hidden;
+}
+
+.weather-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    zoom: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.weather-body .top-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.city {
+  margin-top: 1vh;
+}
+
+
+/*.random{
+    height: 229px;
+    width: 229px;
+    border-radius: 40px;
+    background-color: rgb(0,128,128);
+    color: rgb(255,255,255);
+    font-size: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+/*
+.box{
+    height: 480px;
+    width: 480px;
+    border-radius: 40;
+    border-style: solid;
+    border-width: thick;
+    background-color: rgb(0,109,92);
+    color: rgb(255,255,255);
+    border-color: rgb(255,144,0);
+    font-size: 37px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+.weather-top {
+  position: relative;
+  top: 9.2vh;
+  height: 26.2vh;
+  width: 100%;
+}
+
+
+.weather-greeting {
+  margin: 0 auto;
+  position: absolute; 
+  top: 8.2vh; 
+  width: fit-content; 
+  height: 19.2vh; 
+  padding: 0 4vw; 
+  border-radius: 60px; 
+  opacity: 0.72; 
+  z-index: 1002; 
+
+  line-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.weather-greeting-txt {
+  font-family: 'Lobster', cursive;
+  font-size: 6.6vw;
+  color: rgb(255,255,255);
+  font-weight: bold; 
+  margin: auto;
+}
+
+
+.date-and-time {
+  position: absolute;
+  top: 26.2vh;
+  width: fit-content;
+  height: fit-content;
+  line-height: fit-content;
+  padding: 2vh 2vw;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.76;
+  background-color: rgb(2,2,2);
+
+  margin: 0 auto;
+  /*z-index: 1000;*/
+
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1.6vw;
+  color: rgb(192,192,192);
+  z-index: 1001;
+}
+
+
+
+.full-weather-div {
+  position: relative;
+  height: 62vh;
+  width: 84vw;
+  top: 36.2vh;
+  border-radius: 60px; 
+  display: flex; 
+  justify-content: center;
+  margin: auto;
+}
+
+.weather-div {
+  position: relative;
+  height: 56.6vh;
+  width: 82vw;
+  border-radius: 60px;
+  z-index: 100;
+  opacity: 0.88;
+  display: flex;
+  justify-content: center;
+  margin: 2.7vh auto;
+
+  background-color: rgb(128,128,128);
+}
+
+.weather-div-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border-radius: 60px; 
+  opacity: 0.42; 
+  z-index: 99;
+}
+
+.temp-conditions {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+}
+
+.temp, .conditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.conditions {
+  position: relative;
+  z-index: 101;
+}
+
+.temp {
+  position: absolute;
+  z-index: 102;
+  width: 100%;
+  margin: 0 auto;
+  top: 20%;
+  left: 6%;
+  font-size: 5.4vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: rgb(6,6,6);
+}
+
+.conditions img {
+  height: 16vw;
+  width: 16vw;
+}
+
+.city {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 84px;
+  color: rgb(255,255,255);
+  font-weight: bold;
+  z-index: 101;
+}
+
+
+.left-div, .right-div {
+  position: absolute;
+  bottom: -5vh;
+  height: 38.25vh;
+  width: 28vw;
+  border-radius: 22px;
+  z-index: 102;
+  /*font-family: 'Lobster', cursive;*/
+  font-family: arial;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.left-div {
+  display: block;
+  right: 17.6vw;
+  text-align: right;
+  padding-right: 12px;
+  line-height: 2.2;
+  font-size: 34px;
+  text-align: center;
+}
+
+.right-div {
+  display: flex;
+  left: 17.6vw;
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.right-div-0 {
+  display: block;
+  width: 50%;
+}
+
+.right-div-1 {
+  display: block;
+  text-align: right;
+  width: 51%;
+}
+
+
+.left-div * {
+  height: 12.75vh;
+  line-height: 12.75vh;
+}
+
+.right-div * {
+  height: 6.375vh;
+  line-height: 6.375vh;
+}
+
+
+.low-temp, .conditions-info, .humidity, .wind, .sunrise {
+  width: 100%;
+}
+
+.low-temp {
+  border: 1px solid;
+  border-left: none;
+  border-right: none;
+}
+
+.conditions-info, .conditions-info-val, .feels-like, .feels-like-val, .humidity, .humidity-val, .wind, .wind-val, .sunrise, .sunrise-val {
+  border-bottom: 1px solid;
+}
+
+.conditions-info-val, .feels-like-val, .humidity-val, .wind-val, .sunrise-val, .sunset-val {
+  font-family: Arial;
+}
+
+.right-div .degrees {
+  margin-right: 0;
+}
+
+
+.date-and-time-text {
+  
+}
+
+.weather-body .nav-bar-apps {
+  position: absolute;
+  top: 0;
+  zoom: 100%;
+
+  width: 70vw;
+
+  margin: 0 auto;
+}
+
+
+
+.weather-body .top-section {
+  position: absolute;
+  top: -1vh;
+  left: 0;
+  background-color: transparent;
+}
+
+/*
+  .weather-greeting {
+  height: 12vh;
+  padding: 0 4vw;
+}
+
+.date-and-time {
+  top: 20vh;
+}
+*/
+
+
+@media only screen and (max-width: 1300px) and (orientation: portrait) {
+  
+  .right-div-0 {
+    width: 44%;
+  }
+
+  .right-div-1 {
+    width: 56%;
+  }
+  
+  .weather-body .menu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .weather-body .top-section {
+    position: absolute;
+    top: -1vh;
+    left: 0;
+    background-color: transparent;
+
+    width: fit-content;
+  }
+
+
+
+  .lr-divs {
+    position: absolute;
+    bottom: 4vh;
+    height: 37vh;
+    width: 100%;
+
+  
+    display: flex;
+  }
+
+  .left-div, .right-div {
+    top: 0;
+/*    background-color: rgb(2,2,2);*/
+    background-color: transparent;
+    opacity: 0.91;
+  }
+
+  .weather-greeting {
+    /*top: 8.2vh;*/
+    top: 6.2vh;
+    margin: auto;
+    height: 12vh;
+  }
+
+  .weather-greeting-txt {
+    font-size: 5.5em;
+  }
+
+  .city {
+    font-size: 5.3em;
+  }
+
+  .date-and-time {
+    /*top: 19.2vh;*/
+    top: 17.2vh;
+    font-size: 1.4em;
+    margin: auto;
+
+  }
+
+  .full-weather-div {
+    width: 100vw;
+    height: 73vh;
+    /*top: 27vh;*/
+    top: 25vh;
+    margin: auto;
+  }
+
+  .weather-div-background {
+    width: 100%;
+  }
+
+  .weather-div {
+    position: absolute;
+    left: -0;
+    height: 69vh;
+    width: 96%;
+    margin: 2vh 2%;
+  }
+
+  /*
+  .city {
+    font-size: 58px;
+  }*/
+
+  /*
+  .conditions, .temp {
+    zoom: 282%;
+  }*/
+
+  .temp-conditions {
+    height: 100%;
+    width: 100%; 
+  }
+
+  .conditions img {
+    height: 189px;
+    width: 189px;
+  }
+
+  .temp {
+    top: -4vh;
+    font-size: 80px;
+    text-align: center;
+    margin: 25% auto;
+  }
+
+  .left-div, .right-div {
+    position: absolute;
+    align-self: flex-end;
+    width: fit-content;
+    height: 25vh;
+    padding: 1vh 1vw;
+    
+  }
+
+  .left-div {
+    font-size: 1.7em;
+    left: 1vw;
+    width: 40%;
+  }
+
+  .left-div * {
+    height: 8vh;
+    line-height: 8vh;
+    padding: 1vh auto;
+  }
+
+ /* .precip {
+    font-size: 0.84em;
+  }*/
+
+  .right-div {
+    padding-top: 1vh;
+    font-size: 1.2em;
+    left: 46%;
+    width: 48%;
+  }
+
+  .right-div * {
+    height: 4vh;
+    line-height: 4vh;
+    padding: 0.5vh auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .right-div {
+    display: none;
+  }
+
+  .left-div {
+    width: 70vw;
+    height: 28vh;
+    margin: 0 8.5vw;
+
+    top: -2vh;
+
+    font-size: 1.7em;
+    
+    text-align: center;
+    background-color: transparent;
+    background-color: rgb(2,2,2);
+  }
+
+  .left-div * {
+    height: 9vh;
+    line-height: 9vh;
+  }
+
+  .lr-divs {
+    bottom: 7vh;
+    width: 100%;
+  }
+}
+
+
+
+/*
+@media only screen and (max-width: 419px) and (min-width: 376px) and (orientation: portrait) {
+  .left-div {
+    font-size: 1.1em;
+  }
+
+  .right-div {
+    font-size: 0.9em;
+  }
+}
+*/
+
+
+@media only screen and (max-width: 500px) and (min-width: 420px) and (orientation: portrait) {
+/*  .left-div {
+    font-size: 1.5em;
+  }
+
+  .right-div {
+    font-size: 1em;
+  }
+*/
+  .weather-greeting-txt {
+    font-size: 4.8em;
+  }
+
+  .date-and-time {
+    font-size: 1.2em;
+  }
+
+  .city {
+    font-size: 4.6em;
+  }
+}
+
+@media only screen and (max-width: 460px) and (orientation: portrait) {
+  .conditions img {
+    height: 189px;
+    width: 189px;
+  }
+
+  .weather-greeting-txt {
+    font-size: 4.6em;
+  }
+
+  .date-and-time {
+    font-size: 1.2em;
+  }
+
+  .city {
+    font-size: 4.2em;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 380px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 4.2em;
+  }
+}
+
+@media only screen and (max-width: 379px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 4em;
+  }
+}
+
+
+@media only screen and (max-width: 357px) and (min-width: 316px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 3.6em;
+  }    
+
+  .city {
+    font-size: 3.6em;
+    top: 2vh;
+  }
+
+  .date-and-time {
+    font-size: 1.2em;
+  }
+
+  
+}
+
+
+
+@media only screen and (max-width: 315px) and (min-width: 293px) and (orientation: portrait) {
+  
+  .weather-greeting-txt {
+    font-size: 3.2em;
+  } 
+
+  .city {
+    font-size: 3.4em;
+  }
+
+  .date-and-time {
+    font-size: 1.2em;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 260px) and (min-width: 244px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 2.7em;
+  } 
+
+  .city {
+    font-size: 2.6em;
+  }
+
+  .date-and-time {
+    font-size: 0.64em;
+  }
+
+
+
+  .right-div {
+    display: none;
+  }
+
+  .left-div {
+    width: 70vw;
+    height: 28vh;
+    margin: 0 2vw;
+    text-align: center;
+    background-color: rgb(2,2,2);
+  }
+
+  .left-div * {
+    height: 9vh;
+    line-height: 9vh;
+  }
+
+  .lr-divs {
+    bottom: 6vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 243px) and (min-width: 225px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 2.5em;
+  } 
+
+  .city {
+    font-size: 2.6em;
+  }
+
+  .date-and-time {
+    font-size: 0.64em;
+  }
+
+  .conditions img {
+    height: 144px;
+    width: 144px;
+  }
+
+  .right-div {
+    display: none;
+  }
+
+  .left-div {
+    width: 70vw;
+    height: 28vh;
+    margin: 0 2vw;
+    
+    text-align: center;
+    background-color: rgb(2,2,2);
+  }
+
+  .left-div * {
+    height: 9vh;
+    line-height: 9vh;
+  }
+
+  .lr-divs {
+    bottom: 6vh;
+  }
+}
+
+@media only screen and (max-width: 224px) and (min-width: 198px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 2.2em;
+  } 
+
+  .city {
+    font-size: 2.2em;
+  }
+
+  .date-and-time {
+    font-size: 0.56em;
+  }
+
+  .conditions img {
+    height: 144px;
+    width: 144px;
+  }
+
+  .right-div {
+    display: none;
+  }
+
+  .left-div {
+    width: 70vw;
+    height: 28vh;
+    margin: 0 2vw;
+    
+    text-align: center;
+    background-color: rgb(2,2,2);
+  }
+
+  .left-div * {
+    height: 9vh;
+    line-height: 9vh;
+  }
+
+  .lr-divs {
+    bottom: 6vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 197px) and (min-width: 181px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 2em;
+  } 
+
+  .city {
+    top: 2vh;
+    font-size: 2.2em;
+  }
+
+  .date-and-time {
+    font-size: 0.56em;
+  }
+
+  .right-div {
+    display: none;
+  }
+
+  .left-div {
+    width: 70vw;
+    height: 28vh;
+    margin: 0 2vw;
+
+    text-align: center;
+    background-color: rgb(2,2,2);
+  }
+
+  .left-div * {
+    height: 9vh;
+    line-height: 9vh;
+  }
+
+  .lr-divs {
+    bottom: 4.8vh;
+  }
+
+  .conditions img {
+    height: 144px;
+    width: 144px;
+  }
+}
+
+@media only screen and (max-width: 180px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 1.8em;
+  } 
+
+  .city {
+    top: 2vh;
+    font-size: 2em;
+  }
+
+  .date-and-time {
+    font-size: 0.51em;
+  }
+
+  .conditions img {
+    width: 128px;
+    height: 128px;
+  }
+
+  .right-div {
+    display: none;
+  }
+
+  .left-div {
+    width: 70vw;
+    height: 28vh;
+    margin: 0 2vw;
+    
+    text-align: center;
+    background-color: rgb(2,2,2);
+  }
+
+  .left-div * {
+    height: 9vh;
+    line-height: 9vh;
+  }
+
+  .lr-divs {
+    bottom: 6vh;
+  }
+
+  .conditions img {
+    height: 128px;
+    width: 128px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 340px) and (orientation: portrait) {
+  .lr-divs {
+    bottom: 10vh;
+  }
+
+  .left-div, .right-div {
+    height: 30vh;
+  }
+
+  .left-div * {
+    height: 10vh;
+    line-height: 10vh;
+  }
+
+  .right-div * {
+    height: 5vh;
+    line-height: 5vh;
+  }
+
+  .temp {
+    font-size: 84px;
+    top: 0;
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  html {
+    zoom: 92%;
+  }
+  
+  .weather-body {
+    zoom: 92%;
+  }
+
+  .weather-greeting {
+    top: 6.2vh;
+  }
+  
+  .weather-greeting-txt {
+    font-size: 3.4em;
+  }
+
+  .date-and-time {
+    font-size: 0.91em;
+    top: 17.2vh;
+  }
+
+  .city {
+    font-size: 4em;
+  }
+
+  .full-weather-div {
+    height: 91vh;
+    width: 100vw;
+    top: 25vh;
+  }
+
+  .weather-div {
+    height: 87vh;
+  }
+
+  .conditions img {
+    height: 219px;
+    width: 219px;
+  }
+
+  .weather-div-background {
+    width: 100%;
+  }
+
+  .temp {
+    font-size: 67px;
+    left: 3vw;
+
+  }
+
+  .lr-divs {
+    bottom: 6vh;
+  }
+
+  .left-div, .right-div {
+    top: 0;
+    height: 36vh;
+  }
+
+  .left-div {
+    left: 5.1vw;
+    width: 64vw;
+  }
+
+  .left-div * {
+    height: 12vh;
+    line-height: 12vh;
+  }
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    zoom: 92%;
+  }
+
+  .weather-body {
+    zoom: 92%;
+  }
+ 
+  .left-div, .right-div {
+    width: 40vw;
+  }
+
+  .left-div {
+    left: 2vw;
+  }
+
+  .right-div {
+    left: 49.5vw;
+  }
+
+  .right-div * {
+    height: 6vh;
+    line-height: 6vh;
+  }
+
+  .weather-greeting-txt {
+    font-size: 4.2em;
+  }
+
+  .date-and-time {
+    font-size: 1.1em;
+  }
+
+  .city {
+    font-size: 4em;
+    top: 0.5vh;
+  }
+
+  .temp {
+    font-size: 5em;
+    top: 5vh;
+    left: 3vw;
+  }
+}
+
+
+
+@media only screen and (max-height: 600px) and (max-width: 767px) and (orientation: portrait) {
+  .city {
+    top: 0.5vh;
+  }
+
+  @media only screen and (max-height: 500px) {
+    .full-weather-div {
+      height: 94.5vh;
+    }
+
+    .weather-div {
+      height: 90.5vh;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-height: 800px) and (orientation: portrait) {
+  /*START HERE*/
+  .full-weather-div {
+    /*height: 84vh;*/
+    height: 88vh;
+    top: 25.5vh;
+  }
+
+  .weather-div {
+    /*height: 80vh;*/
+    height: 84vh;
+  }
+
+  .city {
+    top: 2vh;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 293px) and (min-width: 261px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 2.9em;
+  } 
+
+  .city {
+    font-size: 2.8em;
+  }
+
+  .date-and-time {
+    font-size: 0.72em;
+  }
+
+  .left-div {
+    top: -2vh;
+    font-size: 1.6em;
+  }
+}
+
+
+
+@media only screen and (max-width: 1068px) and (min-width: 768px) {
+  .lr-divs {
+    bottom: -1vh;
+  }
+
+  .left-div, .right-div {
+    height: 30vh;
+    background-color: transparent;
+  }
+
+  .left-div {
+    font-size: 2.4em;
+  }
+
+  .right-div {
+    font-size: 1.6em;
+  }
+
+  .left-div * {
+    height: 10vh;
+    line-height: 10vh;
+  }
+
+  .right-div * {
+    height: 5vh;
+    line-height: 5vh;
+  }
+
+  .conditions {
+    top: 9.25vh;
+  }
+
+  .conditions img {
+    height: 245px;
+    width: 245px;
+  }
+
+  .temp {
+    font-size: 96px;
+    top: 13.85vh;
+  }
+
+  .city {
+    font-size: 5.6em;
+    top: -0.5vh;
+  }
+
+  .weather-greeting-txt {
+    font-size: 6em;
+  }
+
+  .date-and-time {
+    font-size: 1.5em;
+    opacity: 0.76;
+  }
+}
+
+@media only screen and (max-width: 1068px) and (min-width: 768px) and (orientation: portrait) {
+  .full-weather-div {
+    top: 25.6vh;
+  }
+  
+  .city {
+    top: 0.25vh;
+  }
+  
+  .temp {
+    left: 2vw;
+  }
+
+  .conditions {
+    top: 10vh;
+  }
+
+  .weather-body {
+    zoom: 89%;
+  }
+
+  @media only screen and (max-height: 1200px) {
+    .full-weather-div {
+      height: 80vh;
+    }
+
+    .weather-div {
+      height: 76vh;
+    }
+
+
+  }
+}
+
+
+
+/*LANSCAPE*/
+
+@media only screen and (max-width: 1300px) and (orientation: landscape) {
+  .full-weather-div {
+    width: 91vw;
+  }
+
+  .weather-div {
+    width: 86vw;
+  }
+  
+  .conditions {
+    position: relative;
+    top: -16vh;
+  }
+
+  .left-div, .right-div {
+    height: 30vh;
+    width: 31vw;
+    bottom: 2vh;
+  }
+
+  .left-div * {
+    line-height: 10vh;
+  }
+
+  .right-div * {
+    line-height: 5vh;
+  }
+
+  .right-div-0 {
+    width: 44%;
+  }
+
+  .right-div-1 {
+    width: 56%;
+  }
+
+  .temp {
+    top: -11vh;
+    left: 1.5vw;
+    font-size: 5.6em;
+  }
+  
+  .conditions img {
+    height: 219px;
+    width: 219px;
+  }
+
+  .weather-greeting-txt {
+    font-size: 6.2em;
+  }
+
+  .date-and-time {
+    font-size: 1.7em;
+  }
+
+  .full-weather-div {
+    top: 37vh;
+  }
+
+  .weather-body .menu-icon {
+    position: absolute;
+    top: 0.5vh;
+    left: 0.5vw;
+  }
+
+}
+
+@media only screen and (max-width: 1068px) and (orientation: landscape) {
+  .weather-greeting {
+    height: 22vh;
+    line-height: 22vh;
+    top: 2.2vh;
+  }
+
+  .weather-greeting-txt {
+    font-size: 4.4em;
+  }
+
+  .date-and-time {
+    top: 23.2vh;
+    font-size: 1em;
+  }
+
+  .full-weather-div {
+    top: 32.6vh;
+    height: 66vh;
+    width: 96vw;
+    margin: 0;
+  }
+
+  .weather-div-background {
+    width: 100%;
+    margin: auto;
+  }
+
+  .weather-div {
+    width: 92vw;
+    height: 60.6vh;
+    margin: 2.7vh auto;
+  }
+
+  .left-div, .right-div {
+    /*background-color: yellow;*/
+    width: 31vw;
+    height: 33vh;
+    bottom: -8vh;
+  }
+
+  .left-div {
+    right: 22vw;
+    font-size: 2em;
+  }
+
+  .right-div {
+    left: 22vw;
+    font-size: 1.19em;
+  }
+
+  .left-div * {
+    height: 11vh;
+    line-height: 11vh;
+  }
+
+  .right-div * {
+    height: 5.5vh;
+    line-height: 5.5vh;
+  }
+
+  .conditions {
+    top: -1vh;
+  }
+
+  .conditions img {
+    height: 162px;
+    width: 162px;
+  }
+
+  .temp {
+    font-size: 4.4em;
+    top: 4.89vh;
+  }
+
+  .city {
+    top: 0;
+    font-size: 5.1em;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (orientation: landscape) {
+  .left-div, .right-div {
+    bottom: unset;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1069px) and (orientation: landscape) {
+  .weather-greeting {
+    top: 4.2vh;
+  }
+
+  .date-and-time {
+    top: 22.2vh;
+  }
+
+  .full-weather-div {
+    top: 33vh;
+  }
+
+  .left-div, .right-div {
+    height: 39vh;
+    width: 28vw;
+  }
+
+  .left-div {
+    right: 20vw;
+  }
+
+  .right-div {
+    left: 20vw;
+  }
+
+  .left-div * {
+    height: 13vh;
+    line-height: 13vh;
+  }
+
+  .right-div * {
+    height: 6.5vh;
+    line-height: 6.5vh;
+  }
+}
+
+
+/*@media only screen and (max-width: 1300px) and (min-width: 1069px) and (min-height: 1069px) and (orientation: landscape) {
+  .weather-greeting {
+    top: 4.2vh;
+  }
+
+  .date-and-time {
+    top: 22.2vh;
+  }
+
+  .full-weather-div {
+    top: 33vh;
+  }
+
+  .left-div, .right-div {
+    height: 32vh;
+    width: 28vw;
+  }
+
+  .left-div {
+    right: 17vw;
+  }
+
+  .right-div {
+    left: 17vw;
+  }
+
+  .left-div * {
+    height: 10.667vh;
+    line-height: 10.667vh;
+  }
+
+  .right-div * {
+    height: 5.333vh;
+    line-height: 5.333vh;
+  }
+}*/
+
+
+
+
+@media only screen and (max-width: 1068px) and (min-width: 768px) and (orientation: landscape) {
+  html {
+    zoom: 96%;
+  }
+
+  .weather-body {
+    zoom: 96%;
+  }
+
+  .weather-greeting {
+    top: 4.2vh;
+  }
+
+  .date-and-time {
+    top: 25.2vh;
+  }
+
+  .full-weather-div {
+    top: 34.6vh;
+    height: 70vh;
+  }
+
+  .weather-div {
+    height: 64.6vh;
+  }
+
+  .city {
+    top: 2vh;
+    font-size: 4.6em;
+  }
+  
+  .left-div, .right-div {
+    height: 39vh;
+  }
+
+  .left-div * {
+    height: 13vh;
+    line-height: 13vh;
+  }
+
+  .right-div * {
+    height: 6.5vh;
+    line-height: 6.5vh;
+  }
+
+  .conditions img {
+    height: 192px;
+    width: 192px;
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  html {
+    zoom: 96%;
+  }
+  
+  .weather-body {
+    zoom: 96%;
+  }
+
+  .nav-bar-mobile {
+    zoom: 75%;
+  }
+ 
+  .weather-greeting {
+    top: 5.2vh;
+  }
+
+  .weather-greeting-txt {
+    font-size: 3.7em;
+  }
+
+  .date-and-time {
+    font-size: 0.91em;
+    top: 25.7vh;
+  }
+
+  .full-weather-div {
+    top: 36vh;
+  }
+
+  .city {
+    font-size: 3.7em;
+  }
+
+
+  .left-div, .right-div {
+    width: 30vw;
+    height: 37vh;
+  }
+
+
+  .left-div {
+    right: 22.5vw;
+    font-size: 1.6em;
+  }
+
+  .right-div {
+    left: 22.5vw;
+   /* font-size: 0.91em;*/
+   font-size: 1em;
+  }
+
+  .left-div * {
+    height: 12vh;
+    line-height: 12vh;
+  }
+
+  .right-div * {
+    height: 6vh;
+    line-height: 6vh;
+  }
+
+  .conditions {
+    top: -3vh;
+  }
+
+  .conditions img {
+    height: 144px;
+    width: 144px;
+  }
+
+  .temp {
+    top: 2vh;
+    left: 2vw;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  html {
+    zoom: 92%;
+  }
+
+  .weather-body {
+    zoom: 92%;
+  }
+
+  .full-weather-div {
+    height: 68vh;
+  }
+
+  .weather-div {
+    height: 62vh;
+  }
+
+  .weather-greeting {
+    top: 13.2vh;
+  }
+
+  .weather-greeting-txt {
+    font-size: 5.6em;
+  }
+
+  .date-and-time {
+    top: 31.2vh;
+    font-size: 1.2em;
+  }
+
+  .full-weather-div {
+    top: 44vh;
+  }
+
+  .nav-bar-apps {
+    margin: 0 7.5vw;
+  }
+
+  .left-div, .right-div {
+    width: 32vw;
+  }
+
+  .left-div {
+    right: 19vw;
+  }
+
+  .right-div {
+    left: 19vw;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) and (min-height: 1069px) {
+  .weather-greeting {
+    top: 10.2vh;
+  }
+
+  .date-and-time {
+    top: 28.2vh;
+  }
+  
+  .full-weather-div {
+    height: 72vh;
+    top: 39vh;
+    margin: 0 9vw;
+  }
+
+  .weather-div {
+    height: 66vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .full-weather-div {
+    width: 100%;
+  }
+
+  .weather-div {
+    width: 96%;
+  }
+
+  .left-div, .right-div {
+    width: 34vw;
+  }
+
+  .left-div {
+    right: 26vw;
+  }
+
+  .right-div {
+    left: 26vw;
+    font-size: 0.92em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .left-div, .right-div {
+      width: 30vw;
+    }
+
+    .left-div {
+      right: 30vw;
+      font-size: 1.4em;
+    }
+
+    .right-div {
+      left: 30vw;
+      font-size: 0.76em;
+    }
+  }
+  
+}
+
+
+
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) {
+  .left-div, .right-div {
+    bottom: unset;
+    top: 0;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .weather-greeting-txt {
+    font-size: 4.8em;
+  }
+
+  .date-and-time {
+    font-size: 1.1em;
+  }
+
+  .city {
+    font-size: 5.1em;
+  }
+}
+
+/*
+@media only screen and (max-width: 1228px) and (min-width: 1112px) and (orientation: landscape) {
+  .conditions img {
+    height: 202px;
+    width: 202px;
+  }
+  
+  .temp {
+    top: -11.6vh;
+    left: 1.6vw;
+  }
+}
+
+@media only screen and (max-width: 1111px) and (orientation: landscape) {
+  .left-div, .right-div {
+    height: 25vh;
+    width: 39vw;
+  }
+
+  .left-div {
+    right: 8.2vw;
+  }
+
+  .right-div {
+    left: 8.2vw;
+  }
+
+  .left-div * {
+    height: 8vh;
+    line-height: 8vh;
+  }
+
+  .right-div * {
+    height: 4vh;
+    line-height: 4vh;
+  }
+
+  .conditions {
+    top: -26.6vh;
+  }
+  
+  .conditions img {
+    height: 151px;
+    width: 151px;
+  }
+  
+  .temp {
+    top: -25vh;
+    left: 1.2vw;
+    font-size: 4.8em;
+  }
+
+  .city {
+    top: -1vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 999vw) and (orientation: landscape) {
+  .city {
+    font-size: 4.8em;
+  }
+
+  .left-div, .right-div {
+    height: 22vh;
+   /* background-color: rgb(2,2,2);*/
+/*    opacity: 0.89;
+    padding: 1vh;
+  }
+
+  .left-div * {
+    height: 7vh;
+    line-height: 7vh;
+  }
+
+  .right-div * {
+    height: 3.5vh;
+    line-height: 3.5vh;
+  }
+  
+  .right-div {
+    font-size: 1.4em;
+  }
+
+  .left-div {
+    font-size: 1.9em;
+  }
+
+  .date-and-time {
+    font-size: 1.4em;
+  }
+
+  .weather-greeting-txt {
+    font-size: 5.9em;
+  }
+}*/
+
+ @media only screen and (max-width: 600px) and (min-height: 700px) {
+  .right-div {
+    font-size: 1.1em;
+  }
+
+ }
+
+
+
+ .conditions-img-and-temp {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+
+
+
+ @media only screen and (max-height: 300px) and (orientation: landscape) {
+   .full-weather-div {
+     height: 75vh;
+     top: 35vh;
+   }
+
+   .weather-div {
+     height: 70.2vh;
+   }
+
+   .weather-greeting {
+     top: 3.2vh;
+   }
+
+   .date-and-time {
+     top: 23.7vh;
+   }
+
+   .left-div, .right-div {
+     height: 43vh;
+     top: 12vh;
+   }
+
+   .left-div * {
+     height: 14vh;
+     line-height: 14vh;
+   }
+
+   .right-div * {
+     height: 7vh;
+     line-height: 7vh;
+   }
+ }
+
+
+
+@media only screen and (min-height: 600px) and (max-height: 699px) and (orientation: portrait) {
+  .city {
+    top: 0.75vh;
+  }
+}
+
+ @media only screen and (min-height: 800px) and (max-width: 767px) and (orientation: portrait) {
+   .city {
+     top: 1.5vh;
+     font-size: 4.2em;
+   }
+
+   .weather-greeting-txt {
+     font-size: 4em;
+   }
+
+   .date-and-time {
+     font-size: 1em;
+   }
+ }
+
+
+ @media only screen and (max-height: 799px) and (min-height: 700px) and (max-width: 767px) and (orientation: portrait) {
+   .city {
+     top: 1vh;
+     font-size: 3.7em;
+   }
+ }
+
+
+
+ @media only screen and (max-height: 350px) and (orientation: landscape) {
+   .temp {
+     font-size: 4em;
+   }
+ }
+
+
+
+
+
+ @media only screen and (max-width: 1300px) and (min-width: 768px) and (orientation: portrait) {
+  .weather-greeting-txt {
+    font-size: 5.9em;
+  } 
+
+  .date-and-time {
+    font-size: 1.4em;
+  }
+  
+  .city {
+    font-size: 6.2em;
+   }
+ }
+
+
+
+ @media only screen and (max-height: 384px) and (orientation: landscape) {
+   .city {
+     top: 0;
+   }
+ }
+
+ @media only screen and (min-height: 385px) and (max-height: 499px) and (orientation: landscape) {
+   .city {
+     top: 1vh;
+   }
+ }
+
+ @media only screen and (min-height: 500px) and (orientation: landscape) {
+   .city {
+     top: 2vh; 
+   }
+ }
+
+
+
+ @media only screen and (max-width: 300px) and (orientation: portrait) {
+   .city {
+     top: 1.5vh;
+   }
+ }
+
+
+
+ @media only screen and (min-height: 1000px) and (max-height: 1299px) and (orientation: landscape) {
+   .city {
+     top: 0;
+   }
+ }
+
+
+
+ @media only screen and (max-width: 499px) and (orientation: landscape) {
+   .right-div {
+     width: 31vw;
+   }
+ }
+
+ @media only screen and (min-width: 500px) and (max-width: 767px) and (orientation: landscape) {
+   .right-div {
+     width: 32vw;
+   }
+ }
+
+
+
+ @media only screen and (max-width: 767px) and (orientation: landscape) {
+   .temp {
+     font-size: 3.7em;
+   }
+ }
+
+
+/*
+ @media only screen and (min-width: 1301px) and (max-height: 749px) and (orientation: landscape) {
+   .left-div, .right-div {
+     position: absolute;
+     top: 9vh;
+   }
+ }*/
+
+ @media only screen and (min-width: 1301px) and (min-height: 1100px) and (orientation: landscape) {
+   .left-div, .right-div {
+     height: 42vh;
+     top: -3vh;
+   }
+
+   .left-div * {
+    height: 14vh;
+   }
+
+   .right-div * {
+     height: 7vh;
+   }
+ }
+
+
+ @media only screen and (min-width: 1301px) and (min-height: 1000px) and (orientation: landscape) {
+   .right-div {
+     font-size: 1.31em;
+   }
+ }
+
+
+
+@media only screen and (max-width: 340px) and (orientation: portrait) {
+  .city {
+    font-size: 3.4em;
+  }
+}
+
+
+
+@media only screen and (max-width: 300px) and (orientation: portrait) {
+  .city {
+    font-size: 3em;
+  }
+}
+
+
+
+@media only screen and (min-width: 1000px) and (min-height: 1300px) and (orientation: portrait) {
+  .right-div {
+    left: 48%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1300px) and (min-width: 1069px) and (min-height: 928px) and (max-height: 999px) {
+  .full-weather-div {
+    width: 98vw;
+  }
+
+  .weather-div {
+    width: 94vw;
+  }
+
+  .left-div {
+    right: 21vw;
+  }
+
+  .right-div {
+    left: 21vw;
+  }
+  
+  .weather-greeting-txt {
+    font-size: 6.7em;
+  }
+
+  .date-and-time {
+    font-size: 1.9em;
+  }
+
+  .city {
+    font-size: 6.2em;
+  }
+
+  .left-div {
+    font-size: 3em;
+  }
+
+  .right-div {
+    font-size: 1.8em;
+  }
+
+  .conditions img {
+    height: 245px;
+    width: 245px;
+  }
+
+  .temp {
+    font-size: 5.6em;
+  }
+
+}
+
+
+@media only screen and (max-width: 1300px) and (min-width: 1069px) and (min-height: 928px) and (max-height: 999px) and (orientation: portrait) {
+  
+  .weather-greeting {
+    top: 7.2vh;
+  }
+
+  .date-and-time {
+    top: 18.2vh;
+  }
+
+  .full-weather-div {
+    top: 26vh;
+  }
+  
+  .left-div, .right-div {
+    height: 32vh;
+    top: unset;
+    bottom: 0;
+  }
+
+  
+
+  .left-div * {
+    height: 10.67vh;
+    line-height: 10.67vh;
+  }
+
+  .right-div * {
+    height: 5.333vh;
+    line-height: 5.333vh;
+  }
+
+  .conditions {
+    top: 9vh;
+  }
+
+  .temp {
+    left: 2.2vw;
+    top: 12.2vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 1300px) and (min-width: 1069px) and (min-height: 928px) and (max-height: 999px) and (orientation: landscape) {
+ 
+  .weather-greeting {
+    top: 9.7vh;
+  }
+
+  .date-and-time {
+    top: 27.7vh;
+  }
+  
+  .full-weather-div {
+    top: 36.7vh;
+    height: 70vh;
+  }
+
+  .weather-div {
+    height: 64.5vh;
+  }
+
+  .city {
+    top: 3vh;
+  }
+
+  .conditions {
+    top: -32.75vh;
+  }
+
+  .temp {
+    top: -28.75vh;
+    left: 2vw;
+  }
+
+ 
+
+}
+
+
+
+
+/*
+@media only screen and (max-width: 1300px) and (min-width: 1069px) and (min-height: 1000px) {
+  .full-weather-div {
+    height: 75vh;
+    width: 98vw;
+  }
+
+  .weather-div {
+    height: 68.5vh;
+    width: 94vw;
+  }
+
+  .left-div {
+    top: 24vh;
+    right: 21vw;
+  }
+
+  .right-div {
+    top: 24vh;
+    left: 21vw;
+  }
+  
+  .weather-greeting-txt {
+    font-size: 6.7em;
+  }
+
+  .date-and-time {
+    font-size: 1.9em;
+  }
+
+  .city {
+    font-size: 6.2em;
+  }
+
+  .left-div {
+    font-size: 3em;
+  }
+
+  .right-div {
+    font-size: 1.8em;
+  }
+
+  .conditions img {
+    height: 245px;
+    width: 245px;
+  }
+
+  .temp {
+    font-size: 6.7em;
+    top: 4.4vh;
+  }
+
+  .conditions {
+    top: 1vh;   
+  }
+
+}*/
+
+
+
+@media only screen and (max-width: 1300px) and (min-width: 1069px) and (max-height: 927px) and (orientation: landscape) {
+  .left-div {
+    right: 18.5vw;
+  }
+
+  .right-div {
+    left: 18.5vw;
+  }
+}
+
+
+
+@media only screen and (min-width: 1400px) and (orientation: landscape) {
+  .full-weather-div {
+    top: 35.6vh;
+    width: 92vw;
+  }
+
+  .weather-div {
+    width: 88vw;
+  }
+
+  .city {
+    font-size: 6.6em;
+    top: 2.5vh;
+  }
+
+  .left-div {
+    right: 22.14vw;
+  }
+
+  .right-div {
+    left: 22.14vw;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1069px) and (max-width: 1300px) and (min-height: 1069px) and (orientation: portrait) {
+  .left-div, .right-div {
+    height: 32vh;
+  }
+
+  .left-div * {
+    height: 10.667vh;
+    line-height: 10.667vh;
+  }
+
+  .right-div * {
+    height: 5.33vh;
+    line-height: 5.33vh;
+  }
+}
+
+
+
+
+@media only screen and (orientation: landscape) {
+  .full-weather-div {
+    width: 96vw;
+  }
+
+  .weather-div {
+    width: 92vw;
+  }
+
+  /*
+  .left-div, .right-div {
+    top: -1vh;
+  }
+  */
+
+  .left-div {
+    right: 23.5vw;
+  }
+
+  .right-div {
+    width: 31vw;
+    left: 23.5vw;
+  }
+}
+
+
+
+/*left-div and right-div*/
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .left-div, .right-div {
+    top: -9vh;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .left-div, .right-div {
+    bottom: -6vh;
+  }
+  
+  .full-weather-div {
+    width: 104vw;
+  }
+
+  .weather-div {
+    width: 100vw;
+  }
+
+  .right-div {
+    width: 31vw;
+  }
+
+
+  @media only screen and (max-width: 499px) {
+    .full-weather-div {
+      width: 106vw;
+    }
+  
+    .weather-div {
+      width: 102vw;
+    } 
+  }
+
+
+  @media only screen and (max-height: 339px) {
+    .full-weather-div {
+      height: 69vh;
+    }
+
+    .weather-div {
+      height: 63.6vh;
+    }
+  }
+
+  @media only screen and (max-height: 300px) {
+    .weather-greeting-txt {
+      font-size: 3.3em;
+    }
+  
+    .date-and-time {
+      top: 24.2vh;
+    }
+  
+    .full-weather-div {
+      top: 33vh;
+      height: 74vh;
+    }
+
+    .weather-div {
+      height: 70.6vh;
+    }
+    
+    .left-div, .right-div {
+      top: 13vh;
+    }
+  
+    .left-div {
+      right: 22.5vw;
+    }
+  
+    .right-div {
+      left: 22.5vw;
+    }
+  }
+
+  @media only screen and (min-height: 500px) {
+    .left-div, .right-div {
+      bottom: -12.6vh;
+    }
+
+    .city {
+      font-size: 4em;
+      top: 2.7vh;
+    }
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) and (orientation: portrait) {
+  .left-div, .right-div {
+    top: -8vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) and (orientation: landscape) {
+  .left-div, .right-div {
+    top: 10vh;
+  }
+
+  .left-div {
+    right: 22.5vw;
+  }
+
+  .right-div {
+    left: 22.5vw;
+  }
+
+  .city {
+    font-size: 4.4em;
+  }
+
+  .full-weather-div {
+    width: 100vw;
+  }
+
+  .weather-div {
+    width: 96vw;
+  }
+
+  @media only screen and (min-height: 540px) and (max-width: 992px) {
+    .city {
+      font-size: 4.8em;
+      top: 2.7vh;
+    }
+  }
+
+  @media only screen and (min-height: 540px) and (min-width: 993px) {
+    .city {
+      font-size: 5.1em;
+      top: 2.7vh;
+    }
+  }
+
+  @media only screen and (min-height: 685px) and (min-width: 993px) {
+    .city {
+      font-size: 5.4em;
+      top: 2.7vh;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1069px) and (max-width: 1300px) and (max-height: 1068px) and (orientation: portrait) {
+  .left-div, .right-div {
+    top: -10vh;
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 1069px) and (max-width: 1300px) and (orientation: landscape) {
+  .left-div, .right-div {
+    top: 5vh;
+    width: 31vw;
+  }
+
+  .left-div {
+    right: 21.5vw;
+  }
+
+  .right-div {
+    left: 21.5vw;
+  }
+
+  .city {
+    font-size: 5.4em;
+    top: 2.7vh;
+  }
+
+  .temp {
+    left: 1.6vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .left-div, .right-div {
+    top: 8vh;
+  }
+}
+
+@media only screen and (min-width: 1069px) and (max-width: 1300px) and (min-height: 1069px) and (orientation: portrait) {
+  .left-div, .right-div {
+    top: -4.8vh;
+  }
+
+  .left-div {
+    right: 47vw;
+  }
+
+  .right-div {
+    left: 47vw;
+  }
+}
+
+/*
+@media only screen and (min-width: 1069px) and (max-width: 1300px) and (min-height: 1069px) and (orientation: landscape) {
+  .city {
+    font-size: 5.7em;
+    top: -0.5vh;
+  }
+  
+  .left-div, .right-div {
+    top: 20vh;
+    width: 39vw;
+  }
+
+  .left-div {
+    right: 11vw;
+  }
+
+  .right-div {
+    left: 11vw;
+  }
+
+  .temp {
+    left: 1.6vw;
+  }
+}*/
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .left-div, .right-div {
+    width: 31vw;
+    bottom: -6vh;
+  }
+
+  .left-div {
+    right: 27vw;
+  }
+
+  .right-div {
+    left: 27vw;
+    font-size: 0.76em;
+  }
+  
+}
+
+@media only screen and (max-width: 370px) and (orientation: portrait) {
+  .left-div {
+    width: 64vw;
+  }
+}
+
+@media only screen and (max-height: 370px) and (orientation: landscape) {
+  .left-div {
+    width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 1301px) and (orientation: landscape) {
+  .left-div {
+    right: 22vw;
+    width: 30vw;
+  }
+
+  .right-div {
+    left: 22vw;
+    width: 30vw;
+  }
+
+  @media only screen and (max-height: 999px) {
+    .full-weather-div {
+      height: 63vh;
+    }
+
+    .weather-div {
+      height: 57.6vh;
+    }
+  }
+
+  @media only screen and (min-height: 1000px) {
+    .city {
+      font-size: 7.2em;
+      top: 1vh;
+    }
+  }
+
+  @media only screen and (min-width: 2100px) {
+    .left-div {
+      right: 21vw;
+    }
+
+    .right-div {
+      left: 21vw;
+    }
+  }
+}
+
+
+
+@keyframes vanish-sound-page {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/*enable sound screen*/
+
+.enable-sound {
+  z-index: 1010;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(2,2,2);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.sound-title {
+  font-size: 7.2em;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+  top: 25vh;
+  text-align: center;
+  color: rgb(255,255,255);
+ }
+
+.sound-btns {
+  height: 6vh;
+  width: 100%;
+  
+  position: relative;
+  top: 35vh;
+  left: 21.37vw;
+ }
+
+#sound-btn-0, #sound-btn-1 {
+  height: 10vh;
+  width: 20vw;
+  margin: 4vw;
+  font-size: 2.7em;
+  cursor: pointer;
+
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 234), rgb(255, 0, 212));
+  color: rgb(255,255,255);
+
+  border-radius: 24px;
+}
+
+#sound-btn-0:hover, #sound-btn-1:hover {
+  background: -webkit-linear-gradient(to right,rgb(0, 228, 212),rgb(0, 228, 212), rgb(255, 0, 228));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  border: 4px solid;
+  border-top-color: rgb(0,162,162);
+  border-right-color: rgb(196,0,216);
+  border-bottom-color: rgb(196,0,216);
+  border-left-color: rgb(0,162,162);
+}
+
+@media only screen and (orientation: portrait) {
+  .enable-sound {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .sound-title {
+    font-size: 3.7em;
+  }
+  
+  .sound-btns {
+    top: 32vh;
+    left: 0;
+    margin: auto;
+  }
+  
+  #sound-btn-0, #sound-btn-1 {
+    display: block;
+    width: 100%;
+    margin: 8vh auto;
+  }
+
+  @media only screen and (max-width: 300px) {
+    .sound-title {
+      font-size: 3.4em;
+    }
+  }
+
+  @media only screen and (min-width: 410px) {
+    .sound-title {
+      font-size: 4em;
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .sound-title {
+      font-size: 4.7em;
+    }
+
+    @media only screen and (min-height: 900px) {
+      .sound-title {
+        font-size: 5.4em;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .sound-title {
+      font-size: 6.2em;
+    }
+
+    #sound-btn-0, #sound-btn-1 {
+      width: 104vw;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    .sound-title {
+      font-size: 7.2em;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .sound-title {
+      font-size: 8.2em;
+    }
+  }
+
+  @media only screen and (min-width: 1069px) {
+    #sound-btn-0, #sound-btn-1 {
+      width: 92vw;
+    }
+  }
+
+  
+}
+
+
+
+@media only screen and (orientation: landscape) {
+  .enable-sound {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .sound-title {
+      font-size: 4.7em;
+      top: 21vh;
+    }
+
+    .sound-btns {
+      left: 17.34vw;
+      top: 34vh;
+    }
+
+    #sound-btn-0, #sound-btn-1 {
+      height: 21vh;
+      width: 28vw;
+    }
+
+    @media only screen and (max-height: 340px) {
+      .sound-btns {
+        top: 30vh;
+      }
+    }
+
+    @media only screen and (min-height: 500px) {
+      .sound-title {
+        top: 26vh;
+      }
+
+      .sound-btns {
+        top: 37vh;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1068px) {
+    .sound-title {
+      font-size: 4.7em;
+      top: 21vh;
+    }
+
+    .sound-btns {
+      left: 17.34vw;
+      top: 34vh;
+    }
+
+    #sound-btn-0, #sound-btn-1 {
+      height: 21vh;
+      width: 28vw;
+    
+  }
+
+  @media only screen and (min-height: 480px) {
+    .sound-title {
+      font-size: 5.1em;
+    }
+  }
+
+  @media only screen and (min-height: 540px) {
+    .sound-title {
+      font-size: 5.4em;
+      top: 24vh;
+    }
+
+    .sound-btns {
+      top: 36vh;
+    }
+  }
+  
+}
+
+@media only screen and (min-width: 1069px) and (max-width: 1300px) {
+  .sound-btns {
+      left: 30.5vw;
+    }
+
+    @media only screen and (min-height: 785px) {
+      .sound-title {
+        top: 35vh;
+      }
+
+      .sound-btns {
+        top: 42vh;
+      }
+    }
+}
+
+}
+
+.full-weather-wrap {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) and (orientation: portrait) {
+  .full-weather-div {
+    height: 82vh;
+  }
+
+  .weather-div {
+    height: 78vh;
+  }
+}
+
+@media only screen and (min-height: 1324px) and (orientation: portrait) {
+  .city {
+    top: 2vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) and (max-height: 600px) and (orientation: portrait) {
+  .temp {
+    font-size: 3.9em;
+  }
+
+  #sound-btn-0, #sound-btn-1 {
+    height: 12vh;
+  }
+}
+
+
+
+
+
+@media only screen and (min-height: 1200px) and (min-width: 1069px) and (orientation: portrait) {
+  .temp {
+    font-size: 5.4em;
+  }
+
+  /*
+  .city {
+    font-size: 6.25em;
+    top: 0.25vh;
+  }
+  */
+}
+
+
+
+
+
+@media only screen and (orientation: landscape) {
+  @media only screen and (max-width: 767px) {
+    .left-div {
+      right: 24.8vw;
+      font-size: 1.4em;
+    }
+
+    .right-div {
+      left: 24.8vw;
+      font-size: 0.9em;
+    }
+
+    .weather-div-background, .weather-div {
+      border-radius: 40px;
+    }
+
+    @media only screen and (max-height: 300px) {
+      .full-weather-div {
+        height: 76vh;
+      }
+  
+      .weather-div {
+        height: 72vh;
+        margin: 2vh auto;
+      }
+      
+      .weather-greeting {
+        top: 2.2vh;
+      }
+
+      .date-and-time {
+        top: 23.2vh;
+      }
+
+      .full-weather-div {
+        top: 32vh;
+      }
+
+      .city {
+        top: -0.75vh;
+      }
+      
+      .temp {
+        font-size: 3em;
+      }
+
+      .left-div, .right-div {
+        top: 12vh;
+      }
+    }
+
+    @media only screen and (min-height: 301px) {
+      .left-div, .right-div {
+        bottom: unset;
+        top: 7vh;
+        height: 42vh;
+      }
+      
+      .left-div * {
+        height: 14vh;
+        line-height: 14vh;
+      }
+  
+      .right-div * {
+        height: 7vh;
+        line-height: 7vh;
+      }
+
+      .full-weather-div {
+        height: 68vh;
+      }
+  
+      .weather-div {
+        height: 64vh;
+        margin: 2vh auto;
+      }
+
+      .weather-div, .weather-div-background {
+        border-radius: 48px;
+      }
+
+      .temp {
+        font-size: 3.2em;
+      }
+    }
+
+
+    @media only screen and (min-height: 373px) {
+      .left-div, .right-div {
+        top: 8vh;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width: 499px) {
+    .right-div {
+      left: 27vw;
+      font-size: 0.75em;
+    }
+
+    .left-div {
+      right: 27vw;
+      font-size: 1.25em;
+    }
+
+    .temp {
+      font-size: 2.7em;
+    }
+
+
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1068px) {
+    .temp {
+      font-size: 3.7em;
+    }
+
+    @media only screen and (min-height: 447px) {
+      .city {
+        top: 1.5vh;
+      }
+    }
+
+    @media only screen and (min-height: 600px) {
+      .city {
+        top: 2vh;
+      }
+    }
+
+    @media only screen and (min-height: 700px) {
+      .city {
+        top: 3.5vh;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1069px) and (max-width: 1300px) {
+    .weather-greeting-txt {
+      font-size: 5.9em;
+    }
+
+    .full-weather-div {
+      width: 98vw;
+    }
+
+    .weather-div {
+      width: 94vw;
+    }
+
+    .left-div {
+      right: 22.5vw;
+    }
+
+    .right-div {
+      left: 22.5vw;
+    }
+    
+    .city {
+      font-size: 5.9em;
+    }
+
+    .temp {
+      font-size: 5.3em;
+    }
+
+    @media only screen and (min-height: 900px) {
+      .left-div, .right-div {
+        top: 10vh;
+      }
+    }
+
+    @media only screen and (min-height: 1000px) {
+      .left-div, .right-div {
+        top: 12vh;
+      }
+
+      .city {
+        top: 5.1vh;
+        font-size: 6.6em;
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 1400px) {
+    .temp {
+      font-size: 5.3em;
+    }
+  }
+
+  @media only screen and (min-height: 1600px) {
+    .city {
+      top: 2.5vh;
+    }
+  }
+
+  @media only screen and (min-width: 1301px) and (max-height: 699px) {
+    .menu-icon {
+      position: absolute;
+      top: 2vh;
+      left: 0.5vw;
+      z-index: 1009;
+    }
+
+    .weather-greeting {
+      top: 2.2vh;
+    }
+
+    .date-and-time {
+      top: 20.6vh;
+    }
+
+    .full-weather-div {
+      top: 29.6vh;
+      height: 70vh;
+    }
+
+    .weather-div {
+      height: 65vh;
+    }
+
+    .left-div, .right-div {
+      top: 4vh;
+    }
+
+    .city {
+      top: 0vh;
+    }
+
+    #sound-btn-0, #sound-btn-1 {
+      height: 14vh;
+    }
+
+    .temp {
+      font-size: 4.96em;
+    }
+
+    @media only screen and (max-height: 599px) {
+      .city {
+        top: -1vh;
+      }
+     
+      .weather-greeting {
+        top: 0vh;
+      }
+  
+      .date-and-time {
+        top: 18.4vh;
+      }
+  
+      .full-weather-div {
+        top: 27.4vh;
+        height: 72.2vh;
+      }
+  
+      .weather-div {
+        height: 67.2vh;
+      }
+      
+      .left-div, .right-div {
+        top: 6vh;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1700px) {
+    .left-div {
+      right: 20vw;
+    }
+
+    .right-div {
+      left: 20vw;
+    }
+  }
+
+  @media only screen and (max-height: 799px) and (min-height: 700px) {
+    .city {
+      top: -0.5vh;
+    }
+  }
+}
+
+
+
+
+
+.enable-sound {
+  opacity: 0.92;
+}
+
+
+.full-weather-div, .date-and-time {
+  visibility: hidden;
+}
