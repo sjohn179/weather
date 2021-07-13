@@ -336,9 +336,10 @@ async function getResults(query) {
 
 //  const url2 = `https://cors-anywhere.herokuapp.com/https://api.weatherbit.io/v2.0/forecast/daily?city=${query}&units=I&key=ebd668c024c449779cce39cad4cef052`;
 
-  const url2 = `https://api.weatherbit.io/v2.0/forecast/daily?city=${query}&units=I&key=cde51ce79a8a4982ba303736db667c11`;
+  const url2 = `https://api.weatherbit.io/v2.0/forecast/daily?city=${query}&units=I&key=c4577e8910f84292832bb2d655bb5098`;
 
 //current: KN
+  // cde51ce79a8a4982ba303736db667c11	
   // ebd668c024c449779cce39cad4cef052
   // 6ed2b61126cc4d2fa81c5254348a6a8c
   // 2feea9af9eb44029bca672d6abb8c673
