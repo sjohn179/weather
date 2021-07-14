@@ -332,13 +332,17 @@ function setBackground() {
 */
 
 async function getResults(query) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=imperial&APPID=e692d0d58d50dbeab29b9cdebf5de20a`;
+  // const url = `https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${query}&units=imperial&APPID=8545888095e6a5ded0848434fee746b3`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=imperial&appid=8545888095e6a5ded0848434fee746b3`
+
+  // e692d0d58d50dbeab29b9cdebf5de20a
 
 //  const url2 = `https://cors-anywhere.herokuapp.com/https://api.weatherbit.io/v2.0/forecast/daily?city=${query}&units=I&key=ebd668c024c449779cce39cad4cef052`;
 
-  const url2 = `https://api.weatherbit.io/v2.0/forecast/daily?city=${query}&units=I&key=c4577e8910f84292832bb2d655bb5098`;
+  const url2 = `https://corsanywhere.herokuapp.com/https://api.weatherbit.io/v2.0/forecast/daily?city=${query}&units=I&key=28074b3479ac4964bd24211eeefdc79c`;
 
 //current: KN
+  // c4577e8910f84292832bb2d655bb5098
   // cde51ce79a8a4982ba303736db667c11	
   // ebd668c024c449779cce39cad4cef052
   // 6ed2b61126cc4d2fa81c5254348a6a8c
@@ -426,7 +430,7 @@ async function getResults(query) {
   // 99084bac678242d28dd569962cffc7d9
   // 7976534849b5468aafb1ce5d44329353
 
-  const url3 = `https://cors-anywhere.herokuapp.com/http://api.worldweatheronline.com/premium/v1/weather.ashx?key=d5c2fc10e0f949e58a201437211407&q=${query}&format=json&num_of_days=10`;
+  const url3 = `https://corsanywhere.herokuapp.com/http://api.worldweatheronline.com/premium/v1/weather.ashx?key=d5c2fc10e0f949e58a201437211407&q=${query}&format=json&num_of_days=10`;
 
   // 76f09b120c104ae899272540212105
   // 47fe2b9b3b1f447b8c175737200510
