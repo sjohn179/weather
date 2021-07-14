@@ -426,8 +426,9 @@ async function getResults(query) {
   // 99084bac678242d28dd569962cffc7d9
   // 7976534849b5468aafb1ce5d44329353
 
-  const url3 = `https://cors-anywhere.herokuapp.com/http://api.worldweatheronline.com/premium/v1/weather.ashx?key=76f09b120c104ae899272540212105&q=${query}&format=json&num_of_days=10`;
+  const url3 = `https://cors-anywhere.herokuapp.com/http://api.worldweatheronline.com/premium/v1/weather.ashx?key=d5c2fc10e0f949e58a201437211407&q=${query}&format=json&num_of_days=10`;
 
+  // 76f09b120c104ae899272540212105
   // 47fe2b9b3b1f447b8c175737200510
   // 743edb0fd85a44b0bfc75506200810
   // 851ebc1311e143b695c90814200712
