@@ -332,7 +332,7 @@ function setBackground() {
 */
 
 async function getResults(query) {
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${query}&units=imperial&APPID=e692d0d58d50dbeab29b9cdebf5de20a`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=imperial&APPID=e692d0d58d50dbeab29b9cdebf5de20a`;
 
 //  const url2 = `https://cors-anywhere.herokuapp.com/https://api.weatherbit.io/v2.0/forecast/daily?city=${query}&units=I&key=ebd668c024c449779cce39cad4cef052`;
 
